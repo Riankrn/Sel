@@ -1,2 +1,2 @@
-
-{{$data->'pageTitle']}}
+{{$pageTitle}}
+{{$content}}

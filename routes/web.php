@@ -24,9 +24,7 @@ Route::get('/about', function () {
     return view('about', $data);
 });
 Route::resource('users','UseController');
+
 Route::get('/produk', 'App\Http\Controllers\produkController@index');
 
-Route::get('/produk/tambah_produk', 'produkController@tambah');
-Route::post('/produk/simpan_produk', 'produkController@tambah');
-Route::get('/produk/ubah_produk', 'produkController@ubah');
-Route::post('/produk/update_produk', 'produkController@update');
+Route::resource('/profile','App\Http\Controllers\ProfileController');
